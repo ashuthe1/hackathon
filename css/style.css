@@ -95,11 +95,13 @@ body {
 
 header {
   width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url("../images/landing-page-image.jpg");
+  /* background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("../images/landing-page-image.jpg"); */
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/images/bg_hack\ \(3\).jpg); 
+    /* 3,5 */
   background-position: center;
   background-size: cover;
-  position: relative;
+  right: 150px;
   min-height: 100vh;
   height: 100vh;
   display: flex;
@@ -643,21 +645,47 @@ margin-bottom: 1rem;
   padding: 3rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .responsive {
   color: whitesmoke;
-  width: 30%;
+  width: 26%;
   border: 1px solid rgba(245, 245, 245, 0.146);
   border-radius: 1.5rem;
   text-align: center;
-  padding: 2rem;
+  /* padding: 2rem; */
+  padding: 4em;
+  margin-top: 5em !important;
   display: flex;
   flex-direction: column;
-  align-content: space-between;
+  align-content: space-evenly;
   margin-top: 28px;
+  transition: 0.7s !important;
+
 }
+
+
+.responsive:hover{
+
+  box-shadow: none;
+  transform: scale(1.03) !important;
+  box-shadow: 2px 0px 5px #fac147, 0px 2px 5px #FA4B37, -2px 0px 5px #fac147, 0px -2px 5px #FA4B37,
+      4px 0px 5px #fac147, 0px 4px 5px #FA4B37, -4px 0px 5px #fac147, 0px -4px 5px #FA4B37;
+
+  /* padding-top: 200px; */
+  /* padding-top: 250px; */
+  /* box-shadow: 8px 4px 5px #e9897e; */
+
+  /* text-shadow: 10px 10px 10px black; */
+  /* font-size: larger; */
+  /* filter: grayscale(0); */
+  z-index: 1000;
+
+}
+
+
+
 
 .round-image{
   object-fit: cover;
@@ -688,14 +716,32 @@ margin-bottom: 1rem;
   padding: 0.5em;
   border-radius: 0.5em;
   transition: 0.3s ease-in-out;
+  /* visibility: hidden; */
 }
 
 .responsive a:hover {
   font-weight: bolder;
-  background-color: #02142d;
-  color: white;
-  border-color: white;
+  /* background-color: #02142d; */
+  color: red;
+  font-size: larger;
+  /* border-color: white; */
+  /* visibility: visible; */
+  filter: grayscale(1);
+  /* fill-opacity: 50%; */
+  /* filter: opacity(0.5); */
 }
+
+.letex{
+  position: relative;
+  bottom: 4em;
+  left: 4em;
+  visibility: visible;
+  filter: opacity(1);
+  filter: grayscale(0);
+  /* color: red; */
+  /* box-shadow: #000000; */
+}
+
 
 .description {
   min-height: 55%;
